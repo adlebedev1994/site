@@ -11,6 +11,26 @@
 		overflow-x: hidden;
 
 	}
+@font-face {
+	font-family: notomono-regular;
+	src: url(../notomono-regular.ttf);
+}
+* {
+	font-family:notomono-regular ;
+}
+/*@font-face {
+	font-family: Roboto-Regular;
+	src: url(../Roboto-Regular.ttf);
+}
+* {
+	font-family:Roboto-Regular;
+}*/
+h1 {
+	font-family:Roboto-Regular;
+}
+/*h2 {*/
+	font-family: notomono-regular;
+}
 .container {
  /* max-width: ;
   width: auto;*/
@@ -59,7 +79,7 @@
   font-size: 1.5em;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1350px) {
   .scroll-container,
   .scroll-container:nth-of-type(even) {
     flex-direction: column;
@@ -87,7 +107,7 @@
 }
 
 .scrolled.fade-in {
-  animation: fade-in 2s ease-in-out both;
+  animation: fade-in 1s ease-in-out both;
 }
 
 .scrolled.fade-in-bottom {
@@ -130,8 +150,8 @@
 
 @keyframes fade-in-bottom {
   0% {
-    -webkit-transform: translateY(50px);
-    transform: translateY(50px);
+    -webkit-transform: translateY(150px);
+    transform: translateY(150px);
     opacity: 0;
   }
   100% {
@@ -181,12 +201,13 @@
   				 <div class="d-block d-sm-none scroll-caption" style="font-weight: bold; ">
 			    Я могу быть плавным.
 			  </div>
-			  <div class="scroll-element js-scroll fade-in">
-
-			  </div>
 			  <div class="d-none d-md-block scroll-caption">
 			    Я могу быть плавным.
 			  </div>
+			  <div class="scroll-element js-scroll fade-in">
+
+			  </div>
+			  
 			</section>
 		</div>
 		<div class="col-sm-12 col-md-6 col-lg-6">
@@ -202,17 +223,44 @@
 			  </div>			  
 			</section>
 		</div>
+
 		<div class="container-fluid">
 			<div class="row ">
-				<div class="bg-dark d-none d-md-block col-md-12 col-lg-12 text-center" style="height: 150vh;
-			min-height: 250px; padding: 0; background: linear-gradient(180deg, rgb(15, 17, 17) 45%, rgb(249, 249, 249) 80%);">		
-					<h1 class="d-none d-md-block" style="margin: 5em;font-size: 4em;color: #fff;">Могу быть темным</h1>
-					<h1 class="d-none d-md-block" style="margin: 5em;font-size: 4em;color: #333;">Или светлым.</h1>
+				<div class="bg-dark col-sm-12 d-block d-sm-none text-center" style="height: 80vh;
+				background: linear-gradient(180deg, rgb(108, 201, 135) 23%, rgb(203, 146, 225) 42%, rgb(51, 51, 51) 85%);
+			min-height: 150px; padding: 0;">		
+					<h1 class="d-block d-sm-none" style="margin: 15%;font-size: 2em;color: #333;">Могу быть темным.</h1>
+					<h1 class="d-block d-sm-none" style="margin: 10%;font-size: 2em;color: #eaeaea;">Или светлым.</h1>
 				</div>
-				<div class="bg-dark col-sm-12 d-block d-sm-none text-center" style="height: 80vh;background: linear-gradient(180deg, rgb(15, 17, 17) 45%, rgb(249, 249, 249) 80%);
-			min-height: 250px; padding: 0;">		
-					<h1 class="d-block d-sm-none" style="margin: 5em;font-size: 2em;color: #fff;">Могу быть темным.</h1>
-					<h1 class="d-block d-sm-none" style="margin: em;font-size: 2em;color: #333;">Или светлым.</h1>
+				<div class="clearfix"></div>
+				<div class="bg-dark d-none d-md-block col-md-12 col-lg-12 text-center" style="height: 130vh;
+			min-height: 150px; padding: 0;background: linear-gradient(180deg, rgb(108, 201, 135) 23%, rgb(203, 146, 225) 42%, rgb(51, 51, 51) 85%);">		
+					<h1 class="d-none d-md-block" style="margin: 15%;font-size: 4em;color: #333;">Могу быть темным</h1>
+					<h1 class="d-none d-md-block" style="margin: 13%;font-size: 4em;color: #eaeaea;">Или светлым.</h1>
+				</div>
+				
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="bg-dark col-sm-12 col-md-12 col-lg-12" style="margin:5;padding: 5;">
+					<section class="bg-dark scroll-container">
+					  <div class="scroll-element js-scroll fade-in-bottom"
+					   style="background-color: yellow;margin: 1%; border-radius: 15px;height: 70vh;min-height: 50px;">
+					   <h1 style="margin:30%;font-size: 2em;">Могу рассказать</h1>
+					  </div>
+					 <!--  <div class="scroll-caption">
+					    This animation slides in to the top.
+					  </div>
+					  <div class="scroll-caption">
+					    This animation slides in to the top.
+					  </div> -->
+					  <div class="scroll-element js-scroll fade-in-bottom"
+					  style="background-color: #53c48e; border-radius:20px;">
+					  		<img src="https://gentlemanbeggar.files.wordpress.com/2011/05/original.gif?w=645">
+					  	<h1 style="margin-top: 20%;font-size: 3em;">Или показать</h1>
+					  </div>
+					</section>
 				</div>
 			</div>
 		</div>
